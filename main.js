@@ -17,7 +17,24 @@ const rockPaperScissors = (hand1, hand2) => {
   // Write code here
   // Use the unit test to see what is expected
 
+if (hand1 == hand2){
+  "It's a tie!"
+}else if(hand1 =="rock" && hand2=="paper"){
+  "Hand two wins!"
+}else if(hand1 == "rock" && hand2=="scissors"){
+  "Hand 1 wins!"
+}else if(hand1 =="paper" && hand2=="rock"){
+  "Hand 1 wins!"
+}else if(hand1 =="paper" && hand2=="scissors"){
+  "Hand 2 wins!"
+}else if (hand1=="scissors" && hand2=="rock"){
+  "Hand 2 wins!"
+}else if (hand1=="scissors" && hand2=="paper"){
+  "Hand 2 wins!"
 }
+}
+
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
