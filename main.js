@@ -12,8 +12,10 @@ const rl = readline.createInterface({
 });
 
 // the function that will be called by the unit test below
-const rockPaperScissors = (hand1, hand2) => {
 
+const rockPaperScissors = (hand1, hand2) => {
+hand1= hand1.trim().toLowerCase();
+hand2= hand2.toLowerCase().trim();
   // Write code here
   // Use the unit test to see what is expected
 
@@ -39,10 +41,11 @@ if (hand1 == hand2){
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
 // to close it ctrl + C
+
 function getPrompt() {
   rl.question('hand1: ', (answer1) => {
     rl.question('hand2: ', (answer2) => {
-      console.log(rockPaperScissors(answer1, answer2) );
+      console.log(rockPaperScissors(answer1, answer2));
       getPrompt();
     });
   });
