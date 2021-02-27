@@ -68,9 +68,22 @@ _Can you think of a simpler way?_
 #### Push Yourself Further
 
 1. What should the program return if the user inputs something that isn't "rock", "paper", or "scissors"?
+
+## RACHEL'S NOTE: ERROR ALERT??- HOW TO CORRECTLY IMPLIMENT IN TERMINAL APP? IS THAT DIFFERENT THAN HTML COMPONENT?
+
 1. Can you use `.trim()` to solve the problem if a user types in a space with their input?
+
+## RACHEL'S NOTE: DONE
+
 1. Minimize redundancy: D.R.Y. up your code. Are there ways to not type as much as you've typed? Can you make the code smaller?
+
+## RACHEL'S NOTE: Change to switch statements- ask for help- Papaya example doesn't make sense for this one...
+
 1. Compartmentalize your code into individual functions. This game doesn't have to run just one function, can you pull code blocks out and put them into other functions that can be called from `rockPaperScissors`?
+
+## RACHEL'S NOTE: How to even start??
+
+---
 
 ### Hints
 
