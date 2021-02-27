@@ -13,9 +13,25 @@ const rl = readline.createInterface({
 
 // the function that will be called by the unit test below
 
+// let hand2= ["rock", "paper", "scissors"];
+let x = ""
+
+const randomAnswer = () => { 
+  let hand2= ["rock", "paper", "scissors"];
+  let random = Math.floor(Math.random() * Math.floor(3));
+  return x = hand2[random]
+}
+
+
+
+
+// console.log(randomAnswer());
+
 const rockPaperScissors = (hand1, hand2) => {
 hand1= hand1.trim().toLowerCase();
 hand2= hand2.toLowerCase().trim();
+randomAnswer();
+hand2= x;
   // Write code here
   // Use the unit test to see what is expected
 
@@ -43,6 +59,7 @@ if (hand1 == hand2){
 function getPrompt() {
   rl.question('hand1: ', (answer1) => {
     rl.question('hand2: ', (answer2) => {
+      answer2 = x;
       console.log(rockPaperScissors(answer1, answer2));
       getPrompt();
     });
