@@ -71,6 +71,16 @@ if (typeof describe === 'function') {
       assert.equal(rockPaperScissors('Paper', 'SCISSORS'), "Hand two wins!");
       assert.equal(rockPaperScissors('rock ', 'sCiSsOrs'), "Hand one wins!");
     });
+    // NEW UNIT TESTS WRITTEN BY RACHEL!!
+    
+    it('should validate user did not input a blank answer', ()=> {
+      assert.equal(rockPaperScissors(""), "Please input answer!")
+    });
+    it('should detect if user did not write correct words, rock, paper or scissors', ()=> {
+      assert.equal(rockPaperScissors('rock'==='rock'));
+      assert.equal(rockPaperScissors('paper'==='paper'));
+      assert.equal(rockPaperScissors('scissors'==='scissors'));
+    })
   });
 } else {
 
