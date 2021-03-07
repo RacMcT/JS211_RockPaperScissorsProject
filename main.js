@@ -16,8 +16,9 @@ const rl = readline.createInterface({
 const rockPaperScissors = (hand1, hand2) => {
 hand1= hand1.trim().toLowerCase();
 hand2= hand2.toLowerCase().trim();
-  // Write code here
-  // Use the unit test to see what is expected
+if (!hand1 || !hand2) {
+  return "Please enter your choice: rock, paper or scissors"
+}
 
 if (hand1 == hand2){
   return "It's a tie!"
@@ -71,16 +72,10 @@ if (typeof describe === 'function') {
       assert.equal(rockPaperScissors('Paper', 'SCISSORS'), "Hand two wins!");
       assert.equal(rockPaperScissors('rock ', 'sCiSsOrs'), "Hand one wins!");
     });
-    // NEW UNIT TESTS WRITTEN BY RACHEL!!
-
-    it('should validate user did not input a blank answer', ()=> {
-      assert.equal(rockPaperScissors(""), "Please input answer!")
+    // NEW UNIT TEST WRITTEN BY RACHEL!!
+    it('should detect if user entered blank answer', () => {
+      assert.equal(rockPaperScissors(' ', 'paper'), "Please enter your choice: rock, paper or scissors");
     });
-    it('should detect if user did not write correct words, rock, paper or scissors', ()=> {
-      assert.equal(rockPaperScissors('rock'==='rock', 'paper'=== 'paper'), "Hand two wins!");
-      assert.equal(rockPaperScissors('paper'==='paper', 'scissors'), "Hand two wins!");
-      assert.equal(rockPaperScissors('scissors'==='scissors'), "Hand one wins!");
-    })
   });
 } else {
 
